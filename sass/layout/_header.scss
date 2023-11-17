@@ -1,0 +1,17 @@
+//HEADER
+
+.header {
+    background: $white;
+    box-shadow: $shadow;
+    text-align: center;
+    padding: 15px 0px 8px 15px;
+    &__arrow {
+        color: $dark-grey;
+        }
+    &__logo {
+        font-family: $second-font;
+        color: $black;
+        font-size: 33px;
+        }
+}
+

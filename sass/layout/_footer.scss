@@ -1,0 +1,31 @@
+//FOOTER
+
+.footer {
+    background: $dark-grey;
+    &__container {
+        padding: 25px;
+    }
+    &__logo {
+        font-family: $second-font;
+        font-size: 20px;
+        color: $white;
+        padding-bottom: 20px;
+    }
+    
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__item {
+
+    }
+     
+    &__link {
+        color: $white;
+    }
+
+    &__icon {
+        color: $white;
+    }
+}

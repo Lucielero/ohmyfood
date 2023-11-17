@@ -1,0 +1,47 @@
+// STEPS HOME PAGE
+
+.steps {
+    background-color: $white;
+
+    &__container {
+        margin: 30px 15px 50px;
+    }
+    &__title {
+        font-size: $size-title;
+        font-weight: $weight-title;
+    }
+    &__list {
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__item {
+        background-color: $light-grey;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15); //variables
+        border-radius: 20px;
+        height: 72px;
+    }
+    &__number {
+        background: $purple;
+        color: $white;
+        border-radius: 50px;
+        width: 20px;
+        height: 20px;
+        font-size: 13px;
+        font-weight: $weight-subtitle;
+        text-align: center;
+    }
+    &__icon {
+        color: $grey;
+    }
+    &__icon__restaurant {
+        color: $purple;
+    }
+    &__txt {
+        font-size: $size-text;
+        font-weight: $weight-subtitle;
+    }
+}

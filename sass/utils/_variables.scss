@@ -12,7 +12,7 @@ $weight-text: light;
 
 //FONT-SIZE
 $size-title: 24px;
-$size-subtitle: 18px
+$size-subtitle: 18px;
 $size-text: 16px;
 
 //COLORS
@@ -24,7 +24,8 @@ $dark-green: #008766;
 $black: #000;
 $white: #fff;
 $dark-grey: #353535;
-$light-grey: #7e7e7e;
+$grey: #7e7e7e;
+$light-grey: #f6f6f6;
 
 //GRADIENTS
 
@@ -35,6 +36,10 @@ $gradient2:  linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 
 
 //SHADOWS
 
+$shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15); //shadow header
 
+$btn-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25); //shadow btn 
 
+//shadow steps 
 
+$card-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10); 

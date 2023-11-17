@@ -1,0 +1,16 @@
+//RESTAURANTS HOME PAGE
+
+.restaurants {
+    background-color: $light-grey;
+    &__container {
+        margin: 30px 15px 30px 15px;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        border-radius: 15px;
+        box-shadow: $card-shadow;
+        width: 90%;
+    }
+}
