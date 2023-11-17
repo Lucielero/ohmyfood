@@ -46,7 +46,7 @@ h2 {
     gap: 15px;
     padding: 15px 0px 15px 0px;
     color: #353535;
-    /*background-color: #eaeaea;*/
+    /*background-color: #99E2D0;*/
 }
 
 .location__txt {
@@ -68,7 +68,7 @@ section.hero {
     margin: 15px 15px 25px;
 }
 
-.main__btn {
+.main__btn__title {
     height: 50px;
     width: 218px;
     border: none;
@@ -179,11 +179,11 @@ section.restaurants {
     border-radius: 3px;
 }
 
-.card__icon__heart__empty, .card__icon__heart__full {
+.hoverheart__empty, .hoverheart__full {
     font-size: 25px;
 }
 
-.card__icon__heart__full {
+.hoverheart__full {
     display: none;
 }
 
