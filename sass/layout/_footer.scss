@@ -1,31 +1,28 @@
-//FOOTER
+//FOOTER - ALL PAGES
 
 .footer {
     background: $dark-grey;
     &__container {
-        padding: 25px;
+        padding: 10px 10px 10px 25px ;
     }
     &__logo {
         font-family: $second-font;
         font-size: 20px;
         color: $white;
-        padding-bottom: 20px;
+        padding-bottom: 5px;
     }
-    
     &__list {
         display: flex;
         flex-direction: column;
         gap: 15px;
+        padding: 0;
     }
-    &__item {
-
-    }
-     
     &__link {
         color: $white;
     }
 
     &__icon {
         color: $white;
+        width: 30px;
     }
 }

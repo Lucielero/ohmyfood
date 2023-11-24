@@ -1,25 +1,25 @@
-// STEPS HOME PAGE
+// STEPS - HOME PAGE
 
 .steps {
     background-color: $white;
 
     &__container {
-        margin: 30px 15px 50px;
+        margin: 40px 30px 60px 30px;
     }
     &__title {
         font-size: $size-title;
         font-weight: $weight-title;
     }
     &__list {
-        margin: 50px;
+        margin: 0px;
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
     &__item {
+        align-items: center;
         background-color: $light-grey;
         display: flex;
-        justify-content: space-between;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15); //variables
         border-radius: 20px;
         height: 72px;
@@ -28,14 +28,16 @@
         background: $purple;
         color: $white;
         border-radius: 50px;
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
         font-size: 13px;
         font-weight: $weight-subtitle;
         text-align: center;
+        
     }
     &__icon {
         color: $grey;
+        
     }
     &__icon__restaurant {
         color: $purple;

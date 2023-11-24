@@ -1,16 +1,26 @@
-//RESTAURANTS HOME PAGE
+//RESTAURANTS - HOME PAGE
 
 .restaurants {
     background-color: $light-grey;
     &__container {
-        margin: 30px 15px 30px 15px;
-    }
-    &__card {
-        display: flex;
-        flex-direction: column;
-        background-color: $white;
-        border-radius: 15px;
-        box-shadow: $card-shadow;
-        width: 90%;
+        padding: 30px 20px 40px 20px;
     }
 }
+
+.restaurant__card {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    border-radius: 15px;
+    box-shadow: $card-shadow;
+    width: 90%;
+
+    &__img__picture {
+        width: 100%;
+        height: 230px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+}
+

@@ -4,6 +4,7 @@
 //MAIN BUTTON
 
 .main__btn { 
+    display: block;
     height: 50px;
     width: 218px;
     border: none;
@@ -11,8 +12,9 @@
     box-shadow: $btn-shadow;
     border-radius: 25px;
     margin-bottom: 50px;
+
     &__title {
-        text-align: center;
+
         color: $white;
         font-size: $size-text; 
         font-weight: normal; 
@@ -21,3 +23,14 @@
 
 //HEART BUTTON
 
+
+//NEW BUTTON 
+
+.new__button {
+    background-color: $light-green;
+    color: $dark-green;
+    width:80px;
+    height: 29px;
+    text-align: center;
+    border-radius: 3px;
+}

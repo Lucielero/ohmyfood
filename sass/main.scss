@@ -1,8 +1,31 @@
 @import "utils/variables";
+@import "utils/mixins";
+
 @import "components/buttons";
+
 @import "layout/footer";
 @import "layout/header";
 @import "layout/steps";
 @import "layout/hero";
 @import "layout/restaurants";
-@import "utils/mixins";
+@import "layout/_menu";
+
+
+
+//GENERAL
+
+body {
+    font-family: $main-font;
+    width: 100%;
+    margin: auto;
+}
+
+* a {
+    text-decoration: none;
+    color: black;
+}
+
+* li {
+    list-style-type: none;
+}
+

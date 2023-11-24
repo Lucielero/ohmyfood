@@ -1,17 +1,17 @@
-// HERO HOME PAGE
+// HERO - HOME PAGE
 
 //LOCATION SECTION
 
 .location {
     color: $dark-grey;
-    background-color: $grey;
+    background-color: $light-grey2;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 15px;
-    padding: 15px 0px 15px 0px;
     &__txt {
         font-size: $size-text;
-        font-weight: $weight-subtitle;
+        font-weight: 600;
     }
 }
 
@@ -21,9 +21,12 @@
     background-color: $light-grey;
     text-align: center;
     padding: 15px 0px 10px;
+    &__title {
+        margin: 30px 70px 0px 70px; 
+    }
     &__txt {
         font-size: $size-subtitle;
-        font-weight: $weight-text;
+        font-weight: 300;
         margin: 15px 15px 25px;
     }
 }
