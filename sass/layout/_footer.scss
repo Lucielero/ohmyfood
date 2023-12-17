@@ -3,7 +3,7 @@
 .footer {
     background: $dark-grey;
     &__container {
-        padding: 10px 10px 10px 25px ;
+        padding: 20px 10px 10px 25px ;
     }
     &__logo {
         font-family: $second-font;
@@ -24,5 +24,26 @@
     &__icon {
         color: $white;
         width: 30px;
+    }
+}
+
+//BREAKPOINT FOOTER DESKTOP
+@media screen and (min-width: 1024px) {
+    .footer__container {
+        display: flex;
+        flex-direction: row-reverse;    
+        padding: 40px 60px 10px 0px;
+        align-items: center;
+
+    }
+    .footer__logo {
+        margin-left: 90px;
+    }
+    .footer__list {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer__link__space {
+        margin-left: 50px;
     }
 }

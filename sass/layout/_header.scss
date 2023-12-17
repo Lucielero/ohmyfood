@@ -1,12 +1,15 @@
 //HEADER  - ALL PAGES
 
 .header {
-    background: $white;
-    box-shadow: $shadow;
     text-align: center;
     padding: 15px 0px 8px 15px;
+    
     &__arrow {
+        position: absolute;
+        left: 6%;
+        top: 5%;
         color: $dark-grey;
+        font-size: 20px;
         }
     &__logo {
         font-family: $second-font;

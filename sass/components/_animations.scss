@@ -1,0 +1,92 @@
+//LOADER
+
+.loader__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 1;
+    animation: fadeOutBackground 1s forwards 3s;
+  }
+  
+  .loader {
+    width: 100px;
+    height: 30px;
+    position: relative;
+    animation: spin 1.5s linear infinite;
+    &__ellipse {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+  }
+  
+ 
+  .loader__ellipse:nth-child(1) {
+    background: $purple;
+    left: 0;
+  }
+  
+  .loader__ellipse:nth-child(2) {
+    background: $pink;
+    left: 40px;
+  }
+  
+  .loader__ellipse:nth-child(3) {
+    background: $light-green;
+    left: 80px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes fadeOutBackground {
+    0% { opacity: 0.8; }
+    100% { opacity: 0; visibility: hidden; }
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    animation: fadeInContent 2s forwards 4s;
+  }
+  
+  @keyframes fadeInContent {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+//MAIN BTN
+
+
+
+
+//HEART BTN
+.hoverheart:hover {
+    .hoverheart__full {
+        opacity: 1;
+        transition: .3s ease-in-out;
+    }
+    .hoverheart__empty {
+        opacity: 0;
+        transition: .3s ease-in-out;
+    }
+}
+
+
+
+
