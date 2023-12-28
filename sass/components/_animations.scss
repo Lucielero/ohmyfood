@@ -53,14 +53,6 @@
   }
   
 //MAIN BTN (ALL PAGES)
-.main__btn:hover {
-
-  background: linear-gradient(277deg, rgb(171, 116, 238) 0%, rgba(255,121,218,1) 100%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
-}
-
-
-
 
 
 //HEART BTN (ALL PAGES)
@@ -76,8 +68,7 @@
 }
 
 
-
-//DISHES APPEARANCE  (MENU PAGE)
+//MENU APPEARANCE  (MENU PAGE)
 .entrance-appearance {
   &:nth-of-type(1) {
     animation: SlideDown 0.9s ease-in-out;

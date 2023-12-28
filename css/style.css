@@ -5,7 +5,7 @@
   border-style: none;
   margin-left: auto;
   margin-right: auto;
-  background: transparent;
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   width: 218px;
   height: 50px;
@@ -15,47 +15,15 @@
   font-weight: 400;
   cursor: pointer;
 }
-.main__btn::after {
-  content: "";
-  width: 250px;
-  height: 70px;
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  position: absolute;
-  top: 250px;
-  z-index: -1;
+.main__btn:hover {
+  background: linear-gradient(277deg, rgb(171, 116, 238) 0%, rgb(255, 121, 218) 100%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
-.test__btn {
-  border: 0;
-  background: transparent;
-  position: relative;
-  color: #fff;
-  overflow: hidden;
-  padding: 20px 50px;
-  border-radius: 30px;
+.hoverheart__empty {
   cursor: pointer;
-  box-shadow: 0px 0px 0px 0px rgba(143, 64, 248, 0.5), 0px 0px 0px 0px rgba(39, 200, 255, 0.5);
-  transition: all 0.2s;
-}
-
-.test__btn::after {
-  content: "";
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  position: absolute;
-  top: -50px;
-  left: -10px;
-  z-index: -1;
-  transition: all 0.4s;
-}
-
-.test__btn:hover::after {
-  transform: rotate(150deg);
-}
-
-.test__btn:hover {
-  transform: translate 0, -6px;
+  opacity: 1;
+  font-size: 1.5rem;
 }
 
 .hoverheart__full {
@@ -67,19 +35,16 @@
   opacity: 0;
 }
 
-.hoverheart__empty {
-  cursor: pointer;
-  opacity: 1;
-  font-size: 1.5rem;
-}
-
-.new__button {
+.tag__content {
   background-color: #99E2D0;
   color: #008766;
-  width: 80px;
-  height: 29px;
+  width: 85px;
+  height: 25px;
   text-align: center;
+  padding-top: 6px;
   border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .loader__background {
@@ -142,11 +107,6 @@
     visibility: hidden;
   }
 }
-.main__btn:hover {
-  background: linear-gradient(277deg, rgb(171, 116, 238) 0%, rgb(255, 121, 218) 100%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
-}
-
 .hoverheart:hover .hoverheart__full {
   opacity: 1;
   transition: 0.3s ease-in-out;
@@ -326,6 +286,7 @@
 }
 
 .hero {
+  background-color: #f6f6f6;
   text-align: center;
   padding: 15px 0px 65px;
 }
@@ -368,8 +329,9 @@
   object-fit: cover;
 }
 .restaurant__card__tag {
-  position: absolute;
-  right: 8%;
+  position: relative;
+  left: 75%;
+  top: -215px;
 }
 .restaurant__card__content {
   margin: 10px 15px;
