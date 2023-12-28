@@ -1,10 +1,8 @@
 //MENU - MENU PAGES
-
 .restaurant__img__picture {
         height: 100%;
         width: 100%;
 }
-
 .restaurant__menu {
     background-color: $light-grey;
     border-top-left-radius: 50px;
@@ -18,7 +16,6 @@
         align-items: center;
         justify-content: space-between;
     }
-
     &__title {
         font-family: $second-font;
         font-size: 30px;
@@ -30,65 +27,113 @@
     font-weight: $weight-text;
     font-size: $size-subtitle;
     margin: 20px 0px 15px 0px;
-
     &:after {
         display: block;
         content: "";
-        background: #99E2D0;
+        background: $light-green;
         margin-top: 2px;
         height: 3px;
         width: 40px;
     }
 }
 
-.menu__content {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-.menu__card  {
-    background-color: $light-grey;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+//MENU CARD
+.menu__card {
+    margin: 0 15px 15px 0;
+    background: $light-grey;
+    height: 70px;
+    width: 100%;
     border-radius: 20px;
-    height: 72px;
-    padding: 0px 20px 0px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    box-shadow: $menu-card-shadow;
+    position: relative;
+    overflow: hidden;
+        &:hover .menu__card__detail {
+            width: calc(100% - 65px);
+          	transition: width .5s ease-in-out;
+        }
+        &:hover .menu__card__check {
+            transform: translateX(0px);
+          	transition: .5s ease-in-out;  		
+        }
     &__title {
-        font-size: $size-subtitle;
-        font-weight: 500;
-        margin-bottom: 4px;
+        font-size: $size-subtitle;  
+        font-weight: $weight-title;
+        margin: 15px 0 5px 15px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;   
     }
     &__detail {
+        width: 100%;
         display: flex;
         justify-content: space-between;
+        overflow: hidden;
+        transform-origin: left 50%;
+        transition-duration: .5s;
     }
     &__txt {
-        font-size: $size-text;
+        margin-left: 15px;
         font-weight: $weight-text;
+        font-size: $size-text;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;     
     }
     &__price {
         font-size: $size-text;
         font-weight: $weight-title;
+        padding-right: 20px;
     }
-    .check__icon {
-        display: none;  //à travailler
+    &__icon {
+        position: absolute;
+        background-color: $light-green;
+        top: 0;
+        bottom:0;
+        right:0;
+        width: 65px;
+        transform-origin: right 50%;
+        border-radius: 0 20px 20px 0;
+        transform: translateX(65px);
+        overflow: hidden;
+        transition-duration: .5s;
+    }
+    &__check {
+        position:absolute;
+        left: 20px;
+        top: 25px;
+        font-size: 1.5rem;
+        transform: rotate(0deg);
+        color:white;
+        opacity: 1;
     }
 }
-
 .order__btn {
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0 40px 0;
 }
 
 //BREAKPOINT MENU DESKTOP
 @media screen and (min-width: 1024px) {
+    .restaurant__img__picture {
+        height: 30%; //à modifier
+    }
     .restaurant__menu {
         max-width: 1024px;
         margin: auto;
     }
+    .restaurant__menu__header {
+        margin-top: 20px;
+    }
     .restaurant__menu__title {
         margin: auto;
     }
+    .menu__content {
+        width: 65%;
+        margin: auto;
+    }
+    .menu__title {
+        width: 65%;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+
 }

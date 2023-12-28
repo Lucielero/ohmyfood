@@ -407,54 +407,102 @@
   width: 40px;
 }
 
-.menu__content {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
 .menu__card {
-  background-color: #f6f6f6;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  margin: 0 15px 15px 0;
+  background: #f6f6f6;
+  height: 70px;
+  width: 100%;
   border-radius: 20px;
-  height: 72px;
-  padding: 0px 20px 0px 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+.menu__card:hover .menu__card__detail {
+  width: calc(100% - 65px);
+  transition: width 0.5s ease-in-out;
+}
+.menu__card:hover .menu__card__check {
+  transform: translateX(0px);
+  transition: 0.5s ease-in-out;
 }
 .menu__card__title {
   font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 4px;
+  font-weight: 700;
+  margin: 15px 0 5px 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu__card__detail {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  transform-origin: left 50%;
+  transition-duration: 0.5s;
 }
 .menu__card__txt {
-  font-size: 16px;
+  margin-left: 15px;
   font-weight: 300;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu__card__price {
   font-size: 16px;
   font-weight: 700;
+  padding-right: 20px;
 }
-.menu__card .check__icon {
-  display: none;
+.menu__card__icon {
+  position: absolute;
+  background-color: #99E2D0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 65px;
+  transform-origin: right 50%;
+  border-radius: 0 20px 20px 0;
+  transform: translateX(65px);
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+.menu__card__check {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  font-size: 1.5rem;
+  transform: rotate(0deg);
+  color: white;
+  opacity: 1;
 }
 
 .order__btn {
-  padding: 40px 0px 40px 0px;
+  padding: 40px 0 40px 0;
 }
 
 @media screen and (min-width: 1024px) {
+  .restaurant__img__picture {
+    height: 30%;
+  }
   .restaurant__menu {
     max-width: 1024px;
     margin: auto;
   }
+  .restaurant__menu__header {
+    margin-top: 20px;
+  }
   .restaurant__menu__title {
     margin: auto;
+  }
+  .menu__content {
+    width: 65%;
+    margin: auto;
+  }
+  .menu__title {
+    width: 65%;
+    margin: auto;
+    padding-bottom: 15px;
   }
 }
 body {
