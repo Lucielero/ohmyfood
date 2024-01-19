@@ -31,8 +31,11 @@
     background: $gradient1; 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.8rem;
+    font-size: 2rem;
     opacity: 0;
+    &:hover {
+        opacity: 1;
+    }
 }
 
 //NEW TAG 

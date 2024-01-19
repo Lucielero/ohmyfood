@@ -29,8 +29,11 @@
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.8rem;
+  font-size: 2rem;
   opacity: 0;
+}
+.hoverheart__full:hover {
+  opacity: 1;
 }
 
 .tag__content {
@@ -275,9 +278,7 @@
 }
 .location {
   color: #353535;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25) inset;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25) inset;
-  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.25) inset;
   background-color: #EAEAEA;
   display: flex;
   justify-content: center;
@@ -338,6 +339,7 @@
   left: 75%;
   top: -215px;
   width: 10%;
+  height: 2px;
 }
 .restaurant__card__content {
   margin: 10px 15px;
@@ -359,6 +361,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.restaurant__card .hoverheart__empty {
+  padding-bottom: 15px;
+}
+.restaurant__card .hoverheart__full {
+  position: relative;
+  bottom: 8px;
+  margin-left: -29px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -403,11 +413,11 @@
   font-weight: 400;
 }
 .restaurant__menu .hoverheart__empty {
-  padding-right: 25px;
+  padding-right: 24px;
 }
 .restaurant__menu .hoverheart__full {
-  position: absolute;
-  right: 10%;
+  position: relative;
+  right: 65%;
 }
 
 .menu__title {
