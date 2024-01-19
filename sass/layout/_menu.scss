@@ -53,11 +53,11 @@
     box-shadow: $menu-card-shadow;
     position: relative;
     overflow: hidden;
-        &:hover .menu__card__test__detail {
+        &:hover .menu__card__content__detail {
             width: 60%;
           	transition: width .5s ease-in-out;
         }
-        &:hover .menu__card__test_check {
+        &:hover .menu__card__content_check {
             transform: translateX(0px);
           	transition: .5s ease-in-out;  		
         }
@@ -69,7 +69,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;   
     }
-    &__test {
+    &__content {
         display: flex;
         margin: 5px 0 5px 15px;
         width: 100%;
@@ -83,7 +83,6 @@
             overflow: hidden;
             margin-bottom: 10px;
             &__txt {
-                margin-left: 15px;
                 font-weight: $weight-text;
                 font-size: $size-text;
                 overflow: hidden;

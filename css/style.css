@@ -443,11 +443,11 @@
   position: relative;
   overflow: hidden;
 }
-.menu__card:hover .menu__card__test__detail {
+.menu__card:hover .menu__card__content__detail {
   width: 60%;
   transition: width 0.5s ease-in-out;
 }
-.menu__card:hover .menu__card__test_check {
+.menu__card:hover .menu__card__content_check {
   transform: translateX(0px);
   transition: 0.5s ease-in-out;
 }
@@ -459,13 +459,13 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menu__card__test {
+.menu__card__content {
   display: flex;
   margin: 5px 0 5px 15px;
   width: 100%;
   overflow: hidden;
 }
-.menu__card__test__detail {
+.menu__card__content__detail {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -474,19 +474,18 @@
   overflow: hidden;
   margin-bottom: 10px;
 }
-.menu__card__test__detail__txt {
-  margin-left: 15px;
+.menu__card__content__detail__txt {
   font-weight: 300;
   font-size: 16px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menu__card__test__detail__price {
+.menu__card__content__detail__price {
   font-size: 16px;
   font-weight: 700;
 }
-.menu__card__test__icon {
+.menu__card__content__icon {
   background-color: #99E2D0;
   width: 65px;
   transform-origin: right 50%;
@@ -494,7 +493,7 @@
   transform: translateX(65px);
   transition-duration: 0.5s;
 }
-.menu__card__test__icon__check {
+.menu__card__content__icon__check {
   left: 20px;
   top: 25px;
   font-size: 1.5rem;
