@@ -3,7 +3,7 @@
 .restaurants {
     background-color: $light-grey;
     &__container {
-        padding: 30px 20px 60px 20px;
+        padding: 50px 20px 60px 20px;
     }
     &__title {
         margin-bottom: 25px;
@@ -26,24 +26,28 @@
         position: relative;
         left: 75%;
         top: -215px;
+        width: 10%;
     }
     &__content {
         margin: 10px 15px;
+        display: flex;
+    }
+    &__txt {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
     }
     &__title {
         margin-bottom: 5px;
     }
-    &__location__txt {
+    &__location {
         padding-bottom: 15px;
     }
-.hoverheart__empty {
-        position: absolute;
-        right: 10%;
-
-    }
-.hoverheart__full {
-        position: absolute;
-        right: 10%;
+    &__hoverheart {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

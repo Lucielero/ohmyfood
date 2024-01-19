@@ -1,7 +1,8 @@
 //MENU - MENU PAGES
 .restaurant__img__picture {
-        height: 100%;
+        height: 350px;
         width: 100%;
+        object-fit: cover ;
 }
 .restaurant__menu {
     background-color: $light-grey;
@@ -11,7 +12,6 @@
     position: relative;    
     top: -70px;
     &__header {
-        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -21,12 +21,19 @@
         font-size: 30px;
         font-weight: 400;
     }
+    .hoverheart__empty {
+        padding-right: 25px;
+    }
+    .hoverheart__full {
+        position: absolute;
+        right: 10%;
+    }
 }
 
 .menu__title {
     font-weight: $weight-text;
     font-size: $size-subtitle;
-    margin: 20px 0px 15px 0px;
+    margin: 25px 0px 15px 0px;
     &:after {
         display: block;
         content: "";
@@ -41,17 +48,16 @@
 .menu__card {
     margin: 0 15px 15px 0;
     background: $light-grey;
-    height: 70px;
     width: 100%;
     border-radius: 20px;
     box-shadow: $menu-card-shadow;
     position: relative;
     overflow: hidden;
-        &:hover .menu__card__detail {
-            width: calc(100% - 65px);
+        &:hover .menu__card__test__detail {
+            width: 60%;
           	transition: width .5s ease-in-out;
         }
-        &:hover .menu__card__check {
+        &:hover .menu__card__test_check {
             transform: translateX(0px);
           	transition: .5s ease-in-out;  		
         }
@@ -63,50 +69,51 @@
         white-space: nowrap;
         text-overflow: ellipsis;   
     }
-    &__detail {
-        width: 100%;
+    &__test {
         display: flex;
-        justify-content: space-between;
+        margin: 5px 0 5px 15px;
+        width: 100%;
         overflow: hidden;
-        transform-origin: left 50%;
-        transition-duration: .5s;
+        &__detail {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform-origin: left 50%;
+            transition-duration: .5s;
+            overflow: hidden;
+            margin-bottom: 10px;
+            &__txt {
+                margin-left: 15px;
+                font-weight: $weight-text;
+                font-size: $size-text;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;     
+            }
+            &__price {
+                font-size: $size-text;
+                font-weight: $weight-title;
+            }
+        }
+        &__icon {
+            background-color: $light-green;
+            width: 65px;
+            transform-origin: right 50%;
+            border-radius: 0 20px 20px 0;
+            transform: translateX(65px);
+            transition-duration: .5s;
+            &__check {
+              // position:absolute;
+                left: 20px;
+                top: 25px;
+                font-size: 1.5rem;
+                color: white;
+                opacity: 1;
+
+            }
+        }
     }
-    &__txt {
-        margin-left: 15px;
-        font-weight: $weight-text;
-        font-size: $size-text;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;     
-    }
-    &__price {
-        font-size: $size-text;
-        font-weight: $weight-title;
-        padding-right: 20px;
-    }
-    &__icon {
-        position: absolute;
-        background-color: $light-green;
-        top: 0;
-        bottom:0;
-        right:0;
-        width: 65px;
-        transform-origin: right 50%;
-        border-radius: 0 20px 20px 0;
-        transform: translateX(65px);
-        overflow: hidden;
-        transition-duration: .5s;
-    }
-    &__check {
-        position:absolute;
-        left: 20px;
-        top: 25px;
-        font-size: 1.5rem;
-        transform: rotate(0deg);
-        color:white;
-        opacity: 1;
-    }
-}
+} 
 .order__btn {
     padding: 40px 0 40px 0;
 }
@@ -121,7 +128,7 @@
         margin: auto;
     }
     .restaurant__menu__header {
-        margin-top: 20px;
+        margin: 20px 0 40px 0;
     }
     .restaurant__menu__title {
         margin: auto;
@@ -135,5 +142,4 @@
         margin: auto;
         padding-bottom: 15px;
     }
-
 }
