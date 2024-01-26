@@ -117,15 +117,27 @@
   transition: 0.3s ease-in-out;
 }
 
-.entrance-appearance:nth-of-type(1) {
+.hoverheart:hover {
+  animation: pulse 1.4s ease-in-out;
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.menu-animation1:nth-of-type(1) {
   animation: SlideDown 0.9s ease-in-out;
 }
 
-.main-course-appearance:nth-of-type(2) {
+.menu-animation2:nth-of-type(2) {
   animation: SlideDown 1.2s ease-in-out;
 }
 
-.dessert-appearance:nth-of-type(3) {
+.menu-animation3:nth-of-type(3) {
   animation: SlideDown 1.5s ease-in-out;
 }
 
@@ -487,18 +499,156 @@
 }
 .menu__card__content__icon {
   background-color: #99E2D0;
-  width: 65px;
+  width: 95px;
   transform-origin: right 50%;
   border-radius: 0 20px 20px 0;
   transform: translateX(65px);
   transition-duration: 0.5s;
 }
 .menu__card__content__icon__check {
-  left: 20px;
-  top: 25px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
-  opacity: 1;
+}
+
+.order__btn {
+  padding: 40px 0 40px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurant__img__picture {
+    height: 30%;
+  }
+  .restaurant__menu {
+    max-width: 1024px;
+    margin: auto;
+  }
+  .restaurant__menu__header {
+    margin: 20px 0 40px 0;
+  }
+  .restaurant__menu__title {
+    margin: auto;
+  }
+  .menu__content {
+    width: 65%;
+    margin: auto;
+  }
+  .menu__title {
+    width: 65%;
+    margin: auto;
+    padding-bottom: 15px;
+  }
+}
+.restaurant__img__picture {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.restaurant__menu {
+  background-color: #f6f6f6;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 30px 20px 0px 20px;
+  position: relative;
+  top: -70px;
+}
+.restaurant__menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurant__menu__title {
+  font-family: "Shrikhand", serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+.restaurant__menu .hoverheart__empty {
+  padding-right: 24px;
+}
+.restaurant__menu .hoverheart__full {
+  position: relative;
+  right: 65%;
+}
+
+.menu__title {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 25px 0px 15px 0px;
+}
+.menu__title:after {
+  display: block;
+  content: "";
+  background: #99E2D0;
+  margin-top: 2px;
+  height: 3px;
+  width: 40px;
+}
+
+.test__card {
+  margin: 0 15px 15px 0;
+  background: #f6f6f6;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+.test__card:hover .test__card__content__detail {
+  width: calc(100% - 65px);
+  transition: width 0.5s ease-in-out;
+}
+.test__card:hover .test__card__content_check {
+  transform: translateX(0px);
+  transition: 0.5s ease-in-out;
+}
+.test__card__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 15px 0 5px 15px;
+}
+.test__card__content {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0 5px 15px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transform-origin: left 50%;
+  transition-duration: 0.5s;
+}
+.test__card__content__txt {
+  font-weight: 300;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.test__card__content__price {
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 10px;
+  width: 50px;
+}
+.test__card__content__icon {
+  background-color: #99E2D0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 65px;
+  transform-origin: right 50%;
+  border-radius: 0 20px 20px 0;
+  transform: translateX(65px);
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+.test__card__content__icon__check {
+  font-size: 1.2rem;
+  color: white;
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 
 .order__btn {

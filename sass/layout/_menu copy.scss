@@ -45,7 +45,7 @@
 }
 
 //MENU CARD
-.menu__card {
+.test__card {
     margin: 0 15px 15px 0;
     background: $light-grey;
     width: 100%;
@@ -53,11 +53,12 @@
     box-shadow: $menu-card-shadow;
     position: relative;
     overflow: hidden;
-        &:hover .menu__card__content__detail {
-            width: 60%;
+        &:hover .test__card__content__detail {
+           // width: 68%; //changement ici
+            width: calc(100% - 65px);
           	transition: width .5s ease-in-out;
         }
-        &:hover .menu__card__content_check {
+        &:hover .test__card__content_check {
             transform: translateX(0px);
           	transition: .5s ease-in-out;  		
         }
@@ -65,45 +66,52 @@
         font-size: $size-subtitle;  
         font-weight: $weight-title;
         margin: 15px 0 5px 15px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;   
+     //à peut être retirer :
+     //   overflow: hidden;
+     //   white-space: nowrap;
+     //   text-overflow: ellipsis;   
     }
     &__content {
         display: flex;
+        justify-content: space-between; // ajouté
         margin: 5px 0 5px 15px;
         width: 100%;
         overflow: hidden;
-        &__detail {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform-origin: left 50%;
-            transition-duration: .5s;
+        white-space: nowrap; // ptet pas nécessaire
+        text-overflow: ellipsis; //ptet pas nécessaire
+        transform-origin: left 50%; //ajouté
+        transition-duration: .5s; //ajouté
+        &__txt {
+            font-weight: $weight-text;
+            font-size: $size-text;
             overflow: hidden;
-            margin-bottom: 10px;
-            &__txt {
-                    font-weight: $weight-text;
-                    font-size: $size-text;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;   
-            }
-            &__price {
-                    font-size: $size-text;
-                    font-weight: $weight-title;
-            }
+            white-space: nowrap;
+            text-overflow: ellipsis;   
+        }
+        &__price {
+            font-size: $size-text;
+            font-weight: $weight-title;
+            padding-left: 10px;
+            width: 50px;
         }
         &__icon {
             background-color: $light-green;
-            width: 95px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 65px;
             transform-origin: right 50%;
             border-radius: 0 20px 20px 0;
             transform: translateX(65px);
             transition-duration: .5s;
+            overflow: hidden;
             &__check {
                 font-size: 1.2rem;
                 color: white;
+                position: absolute;
+                left: 20px;
+                top: 20px;
             }
         }
     }

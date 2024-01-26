@@ -51,8 +51,6 @@
     0% { opacity: 0.8; }
     100% { opacity: 0; visibility: hidden; }
   }
-  
-//MAIN BTN (ALL PAGES)
 
 
 //HEART BTN (ALL PAGES)
@@ -67,21 +65,34 @@
     }
 }
 
+.hoverheart {
+  &:hover {
+    animation: pulse 1.4s ease-in-out;
+  }
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+}
+}
 
 //MENU APPEARANCE  (MENU PAGE)
-.entrance-appearance {
+.menu-animation1 {
   &:nth-of-type(1) {
     animation: SlideDown 0.9s ease-in-out;
   }
 }
 
-.main-course-appearance {
+.menu-animation2 {
   &:nth-of-type(2) {
     animation: SlideDown 1.2s ease-in-out;
   }
 }
 
-.dessert-appearance {
+.menu-animation3 {
   &:nth-of-type(3) {
     animation: SlideDown 1.5s ease-in-out;
   }
