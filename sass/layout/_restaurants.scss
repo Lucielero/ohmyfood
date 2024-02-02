@@ -75,7 +75,10 @@
         justify-content: space-between;
     }
    .restaurant__card {
-    width: 45%;
-    margin-bottom: 50px;
+        width: 45%;
+        margin-bottom: 50px;
+   }
+   .restaurant__card__tag {
+        left: 82%; 
    }
 }
