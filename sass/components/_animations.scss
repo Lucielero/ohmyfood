@@ -42,16 +42,15 @@
   left: 80px;
 }
   
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
   
-  @keyframes fadeOutBackground {
-    0% { opacity: 0.8; }
-    100% { opacity: 0; visibility: hidden; }
-  }
-
+@keyframes fadeOutBackground {
+  0% { opacity: 0.8; }
+  100% { opacity: 0; visibility: hidden; }
+}
 
 //HEART BTN (ALL PAGES)
 .hoverheart:hover {
@@ -79,7 +78,7 @@
 }
 }
 
-//MENU APPEARANCE  (MENU PAGE)
+//MENU APPEARANCE (MENU PAGE)
 .menu-animation1 {
   &:nth-of-type(1) {
     animation: SlideDown 0.9s ease-in-out;

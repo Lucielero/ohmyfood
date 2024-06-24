@@ -1,9 +1,6 @@
 @import "utils/variables";
-@import "utils/mixins";
-
 @import "components/buttons";
 @import "components/animations";
-
 @import "layout/footer";
 @import "layout/header";
 @import "layout/steps";
@@ -12,7 +9,6 @@
 @import "layout/_menu";
 
 //GENERAL
-
 body {
     font-family: $main-font;
     width: 100%;
