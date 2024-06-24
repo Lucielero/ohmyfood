@@ -1,18 +1,17 @@
 //MENU - MENU PAGES
-
 .main {
     margin-bottom: -70px;
 }
 .restaurant__img__picture {
         height: 350px;
         width: 100%;
-        object-fit: cover ;
+        object-fit: cover;
 }
 .restaurant__menu {
     background-color: $light-grey;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    padding: 30px 20px 0 20px;
+    padding: 30px 20px 50px 20px;
     position: relative;    
     top: -70px;
     &__header {
@@ -133,7 +132,7 @@
     .restaurant__menu {
         width: 80%;
         margin: auto;
-        padding-bottom: 50px; 
+      /*  padding-bottom: 50px; */
     }
     .restaurant__menu__header {
         width: 30%;

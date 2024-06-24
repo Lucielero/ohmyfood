@@ -12,8 +12,7 @@
   z-index: 999;
   opacity: 1;
   animation: fadeOutBackground 1s forwards 1.2s;
-  }
-  
+}
 .loader {
   width: 100px;
   height: 30px;
@@ -26,44 +25,48 @@
     border-radius: 50%;
   }
 }
-   
 .loader__ellipse:nth-child(1) {
   background: $purple;
   left: 0;
 }
-  
 .loader__ellipse:nth-child(2) {
   background: $pink;
   left: 40px;
 }
-  
 .loader__ellipse:nth-child(3) {
   background: $light-green;
   left: 80px;
 }
-  
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-  
 @keyframes fadeOutBackground {
   0% { opacity: 0.8; }
   100% { opacity: 0; visibility: hidden; }
+}
+
+//MAIN BTN (ALL PAGES)
+.main__btn {
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    background: $gradient2;
+    box-shadow: $btn-shadow2;
+    transform: scale(1.05);
+  }
 }
 
 //HEART BTN (ALL PAGES)
 .hoverheart:hover {
     .hoverheart__full {
         opacity: 1;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
     }
     .hoverheart__empty {
         opacity: 0;
         transition: .3s ease-in-out;
     }
 }
-
 .hoverheart {
   &:hover {
     animation: pulse 1.4s ease-in-out;
@@ -84,19 +87,16 @@
     animation: SlideDown 0.9s ease-in-out;
   }
 }
-
 .menu-animation2 {
   &:nth-of-type(2) {
     animation: SlideDown 1.2s ease-in-out;
   }
 }
-
 .menu-animation3 {
   &:nth-of-type(3) {
     animation: SlideDown 1.5s ease-in-out;
   }
 }
-
 @keyframes SlideDown {
   from {
     opacity: 0;

@@ -49,9 +49,9 @@ Pour cette première version, l'effet peut apparaître au survol au lieu du clic
 - Texte: Roboto
 
 **Couleurs**
--Primaire: #9356DC
--Secondaire: #FF79DA
--Tertiaire: #99E2D0
+- Primaire: #9356DC
+- Secondaire: #FF79DA
+- Tertiaire: #99E2D0
 
 **Contraintes:**
 - Approche mobile-first: oui
@@ -61,6 +61,6 @@ Pour cette première version, l'effet peut apparaître au survol au lieu du clic
 
 # Notes sur la réalisation
 
--Le code a été versionné sur GIT et déployé sur GITHUB à l'adresse suivante https://github.com/Lucielero/ohmyfood
+- Le code a été versionné sur GIT et déployé sur GITHUB à l'adresse suivante https://github.com/Lucielero/ohmyfood
 
 

@@ -1,14 +1,11 @@
 //FONT
-
 $main-font: 'Roboto', sans-serif;
 $second-font: 'Shrikhand',serif; 
-
 
 //FONT-WEIGHT 
 $weight-title: 700;
 $weight-subtitle: 600;
 $weight-text: 300; 
-
 
 //FONT-SIZE
 $size-title: 24px;
@@ -16,7 +13,6 @@ $size-subtitle: 18px;
 $size-text: 16px;
 
 //COLORS
-
 $purple: #9356DC;
 $pink: #FF79DA;
 $light-green: #99E2D0;
@@ -29,15 +25,13 @@ $light-grey2: #EAEAEA;
 $light-grey: #f6f6f6;
 
 //GRADIENTS
-
 $gradient1: linear-gradient(193deg, $purple -11.44%, $pink 123.93%);
-$gradient2:  linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
-
+$gradient2: linear-gradient(277deg, $purple 0%, $pink 100%);
 
 
 //SHADOWS
-
 $shadow: 0px 2px 4px 0px $dark-grey; //header shadow
 $btn-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25); //btn shadow
+$btn-shadow2: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
 $card-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10); //steps shadow
 $menu-card-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15); 

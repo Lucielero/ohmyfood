@@ -6,7 +6,7 @@
 @import "layout/steps";
 @import "layout/hero";
 @import "layout/restaurants";
-@import "layout/_menu";
+@import "layout/menu";
 
 //GENERAL
 body {
@@ -15,20 +15,20 @@ body {
     margin: auto;
 }
 
-* a {
+a {
     text-decoration: none;
     color: black;
 }
 
-* li {
+li {
     list-style-type: none;
 }
 
-*h1, h2, h3, h4 {
+h1, h2, h3, h4 {
     margin:0;
 }
 
-*p {
+p {
     margin:0;
 }
 
