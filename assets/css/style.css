@@ -130,7 +130,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.05);
+    transform: scale(1.06);
   }
 }
 
@@ -395,7 +395,7 @@
 .restaurant__card .hoverheart__full {
   position: relative;
   bottom: 8px;
-  margin-left: -29px;
+  margin-left: -30px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -455,7 +455,7 @@
 }
 .restaurant__menu .hoverheart__full {
   position: relative;
-  right: 65%;
+  right: 65.5%;
 }
 
 .menu__title {
@@ -556,7 +556,6 @@
   .restaurant__menu {
     width: 80%;
     margin: auto;
-    /*  padding-bottom: 50px; */
   }
   .restaurant__menu__header {
     width: 30%;
