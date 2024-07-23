@@ -61,6 +61,6 @@ Pour cette première version, l'effet peut apparaître au survol au lieu du clic
 
 # Notes sur la réalisation
 
-- Le code a été versionné sur GIT et déployé sur GITHUB à l'adresse suivante https://github.com/Lucielero/ohmyfood
+- Le code a été versionné sur GIT et déployé sur GITHUB à [cette adresse](https://lucielero.github.io/ohmyfood/)
 
 
