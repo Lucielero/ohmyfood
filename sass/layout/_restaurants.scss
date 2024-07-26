@@ -1,5 +1,4 @@
 //RESTAURANTS - HOME PAGE
-
 .restaurants {
     background-color: $light-grey;
     &__container {
@@ -61,7 +60,6 @@
 }
 
 //BREAKPOINT RESTAURANTS DESKTOP
-
 @media screen and (min-width: 1024px) {
     .restaurants__container {
         width: 75%;
